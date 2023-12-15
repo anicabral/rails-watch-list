@@ -1,0 +1,9 @@
+<h1> Create a Bookmark </h1>
+<div class="container">
+
+<%= simple_form_for @bookmark do |f| %>
+	<%= f.input :comment %>
+  <%= f.input :movie_id, value: @movie.id%>
+	<%= f.submit class:"sa" %>
+<% end %>
+</div>
